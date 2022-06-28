@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+    <title>NIFT - Login</title>
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    </head>
+
+<body>
+	<!-- login page start-->
+	<div class="container-fluid p-0">
+		<div class="row m-0">
+			<div class="col-12 p-0">
+				<div class="login-card">
+					<div>
+						<div class="d-flex justify-content-center">
+							<a class="logo" href="index.html">
+                                <img class="img-fluid for-light" src="assets/images/logo/e-cheque-logo.png" alt="looginpage">
+                                <img class="img-fluid for-dark" src="assets/images/logo/e-cheque-logo.png" alt="looginpage">
+                            </a>
+						</div>
+						<div class="login-main">
+							<form class="theme-form">
+								<h4 class="text-center mb-3">Register</h4>
+								<div class="form-floating mb-2">
+                                    <select class="form-select" id="sel1" name="sellist">
+                                        <option></option>
+                                        <option value="hbl">HBL</option>
+                                        <option value="mcb">MCB</option>
+                                        <option value="hmb">HMB</option>
+                                        <option value="mz">MZ</option>
+                                    </select>
+                                    <label for="sel1" class="form-label">Select Bank Name:</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="accountno" name="accountno" required>
+                                    <label for="accountno">Enter Account No / IBAN</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="nickname" name="nickname" required>
+                                    <label for="nickname">Enter Nick Name</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="text" data-masked="" data-inputmask="'mask': '99999-9999999-9'" class="form-control" id="cnic" name="cnic" required>
+                                    <label for="cnic">Enter CNIC</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="mobileno" value="03" name="mobile" required>
+                                    <label for="mobile">Enter Mobile No</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="text" class="form-control" id="email" name="email" required>
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input type="password" class="form-control" id="password" name="password" required>
+                                    <label for="password">Password</label>
+                                </div>
+								<div class="form-group mb-0">
+									<button class="btn btn-primary btn-block w-100" type="submit">Register</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- JS -->
+	<script src="assets/vendors/jquery/jquery-3.5.1.min.js"></script>
+    <script src="assets/vendors/jquery-mask/jquery.inputmask.bundle.min.js"></script>
+	<script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/config.js"></script>
+	<script src="assets/js/script.js"></script>
+    <script src="assets/js/font-awsome.js"></script>
+    
+
+    <script>
+        $(document).ready(function(){
+            $(":input").inputmask();
+        });
+    </script>
+</body>
+
+</html>
