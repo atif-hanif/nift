@@ -5337,4 +5337,38 @@
 		height: calc(100vh - 210px);
 	}
 }
+
+
+/* Custom */
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+	.echeque-card-body {
+		height: 160px;
+	}
+}
+
+@media only screen and (min-width:1024px) and (max-width:1439px) {
+	.echeque-card-body {
+		height: 230px;
+	}
+}
+
+@media only screen and (min-width:1440px) and (max-width:1599px) {
+	.echeque-card-body {
+		height: 205px;
+	}
+}
+
+@media only screen and (min-width:1600px) and (max-width:1919px) {
+	.echeque-card-body {
+		height: 205px;
+	}
+}
+
+@media only screen and (min-width:1920px) {
+	.echeque-card-body {
+		height: 205px;
+	}
+}
+
 /*# sourceMappingURL=responsive.css.map */
