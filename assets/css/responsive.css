@@ -1662,7 +1662,7 @@
 	}
 
 	.page-wrapper.compact-wrapper .page-body-wrapper .page-body {
-		margin-top: 63px;
+		margin-top: 75px;
 		padding: 0 15px;
 	}
 
@@ -3517,7 +3517,7 @@
 	}
 
 	.page-wrapper.compact-wrapper .page-body-wrapper .page-body {
-		margin-top: 60px;
+		margin-top: 70px;
 	}
 
 	.page-wrapper.compact-wrapper .page-body-wrapper.sidebar-wrapper .sidebar-main .sidebar-links {
@@ -5341,33 +5341,73 @@
 
 /* Custom */
 
+@media only screen and (max-width:767px) {
+	.title {
+		width: 70%;
+    	display: inline-block;
+	}
+
+	.custom-btn {
+		margin: 10px 0;
+	}
+
+	/* .page-wrapper .page-body-wrapper .page-title {
+		display: none;
+	} */
+}
+
 @media only screen and (min-width:768px) and (max-width:1023px) {
 	.echeque-card-body {
 		height: 160px;
+	}
+
+	.title {
+		width: 90%;
+    	display: inline-block;
 	}
 }
 
 @media only screen and (min-width:1024px) and (max-width:1439px) {
 	.echeque-card-body {
-		height: 230px;
+		height: 160px;
+	}
+
+	.title {
+		width: 90%;
+    	display: inline-block;
 	}
 }
 
 @media only screen and (min-width:1440px) and (max-width:1599px) {
 	.echeque-card-body {
-		height: 205px;
+		height: 158px;
+	}
+
+	.title {
+		width: 90%;
+    	display: inline-block;
 	}
 }
 
 @media only screen and (min-width:1600px) and (max-width:1919px) {
 	.echeque-card-body {
-		height: 205px;
+		height: 158px;
+	}
+
+	.title {
+		width: 90%;
+    	display: inline-block;
 	}
 }
 
 @media only screen and (min-width:1920px) {
 	.echeque-card-body {
-		height: 205px;
+		height: 158px;
+	}
+
+	.title {
+		width: 90%;
+    	display: inline-block;
 	}
 }
 

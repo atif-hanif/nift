@@ -7,34 +7,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
-	<title>NIFT - Dashboard</title>
+	<title>NIFT - Confirm eCheque</title>
 	<link rel="stylesheet" href="assets/css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/vendors/scrollbar.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/vendors/animate.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/vendors/feather-icon/feather-icon.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 </head>
 
 <body>
-	<!-- End Loader -->
-	<div class="loader-wrapper">
-		<div class="loader-index"><span></span></div>
-		<svg>
-			<defs></defs>
-			<filter id="goo">
-				<fegaussianblur in="SourceGraphic" stddeviation="11" result="blur"></fegaussianblur>
-				<fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"> </fecolormatrix>
-			</filter>
-		</svg>
-	</div>
-	<!-- Start Loader -->
-
-	<!-- tap on top starts-->
-	<div class="tap-top"><i data-feather="chevrons-up"></i></div>
-	<!-- tap on tap ends-->
 
 	<div class="page-wrapper compact-wrapper" id="pageWrapper">
 		<!-- Start Header -->
@@ -56,7 +39,9 @@
                             <img class="img-fluid" src="assets/images/logo/e-cheque-logo.png" alt="E-Cheque Logo">
                         </a>
 					</div>
-					<div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i></div>
+					<div class="toggle-sidebar">
+                        <i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i>
+                    </div>
 				</div>
 				<div class="left-header col horizontal-wrapper ps-0">
 					<h5 class="mb-0">Assalam-o-Alikum</h5>
@@ -78,6 +63,22 @@
 						</li>
 					</ul>
 				</div>
+				<script class="result-template" type="text/x-handlebars-template">
+					<div class="ProfileCard u-cf">
+						<div class="ProfileCard-avatar">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay m-0">
+								<path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+								<polygon points="12 15 17 21 7 21 12 15"></polygon>
+							</svg>
+						</div>
+						<div class="ProfileCard-details">
+							<div class="ProfileCard-realName">{{name}}</div>
+						</div>
+					</div>
+				</script>
+				<script class="empty-template" type="text/x-handlebars-template">
+					<div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div>
+				</script>
 			</div>
 		</div>
 		<!-- End Header -->
@@ -116,7 +117,7 @@
 									<div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
 								</li>
 								<li class="sidebar-list">
-									<a class="sidebar-link sidebar-title active" href="index.html">
+									<a class="sidebar-link sidebar-title" href="index.html">
 										<img src="assets/images/icons/home.svg" class="menu-icons">
 										<span>Dashboard</span>
 									</a>
@@ -156,42 +157,29 @@
 			<!-- Start Content -->
 			<div class="page-body">
 				<div class="container-fluid">
-					
-
 					<div class="row">
 						<div class="col-12">
 							<div class="card rounded-0">
 								<div class="card-body">
-									<h3 class="mb-0 title">Dashboard</h3>
+									<h3 class="mb-0 title">Confirm eCheque</h3>
 								</div>
 							</div>
 						</div>
 					</div>
-
-					<div class="row">
-						<div class="col-12 col-sm-12 col-md-3">
-							<a href="echeque-management.html">
-								<div class="card">
-									<div class="card-body text-center">
-										<img src="assets/images/icons/e-cheques.svg" class="icons">
-										<h5 class="font-primary mb-0">E-Cheque</h5>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-12 col-sm-12 col-md-3">
-							<a href="digital-cheque-management.html">
-								<div class="card">
-									<div class="card-body text-center">
-										<img src="assets/images/icons/digital-cheques.svg" class="icons">
-										<h5 class="font-primary mb-0">Digital Cheque</h5>
-									</div>
-								</div>
-							</a>
+				
+                    <div class="row">
+						<div class="col-md-6">
+                            <div class="card confirm-card">
+                                <div class="card-body confirm-card-body">
+                                    <div class="cheque-div float-end">
+                                        <p class="d-inline-block mb-0">Cheque No.</p>
+                                        <p class="d-inline-block cheque-no mb-0">7000003</p>
+                                    </div>
+                                </div>
+                            </div>
 						</div>
 					</div>
 				</div>
-				<!-- Container-fluid Ends-->
 			</div>
 			<!-- End Content-->
 
@@ -220,6 +208,7 @@
 	<script src="assets/js/sidebar-menu.js"></script>
 	<script src="assets/js/script.js"></script>
     <script src="assets/js/font-awsome.js"></script>
+
 </body>
 
 </html>
