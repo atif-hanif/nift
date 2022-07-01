@@ -41636,4 +41636,149 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+/* Confirm Cheque */
+
+.confirm-card-body {
+	background-color: #cccccc !important;
+	border-radius: 5px !important;
+}
+
+.cheque-div {
+	text-align: right;
+}
+
+.cheque-no {
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px 10px;
+}
+
+.bank-logo-img {
+    width: 80px;
+}
+
+.date-div {
+	text-align: right;
+}
+
+.cheque-date {
+	border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px 10px;
+}
+
+.payee {
+	width: 10%;
+}
+
+.payee-details {
+	border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px 10px;
+	width: 89%;
+}
+
+.payee-currency {
+	width: 13%;
+}
+
+.payee-amount {
+	color: var(--theme-default);
+	text-transform: uppercase;
+	border-bottom: 1px solid var(--theme-default);
+	width: 86%;
+}
+
+.digit-div {
+	text-align: right;
+	border-bottom: 1px solid var(--theme-default);
+	padding-bottom: 15px;
+	padding-top: 10px;
+}
+
+.digit {
+	border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px 10px;
+}
+
+.payee-bank {
+	color: var(--theme-default);
+	text-transform: uppercase;
+}
+
+.cheque-number {
+	font-family: MICR Encoding;
+}
+
+.payee-mobile {
+	width: 50%;
+	color: var(--theme-default);
+	float: left;
+}
+
+.payee-mobile-no {
+	width: 50%;
+}
+
+.purpose {
+	width: 50%;
+	color: var(--theme-default);
+	float: left;
+}
+
+.purpose-for {
+	width: 50%;
+}
+
+.payment-details {
+	width: 50%;
+	color: var(--theme-default);
+	float: left;
+}
+
+.payment-amount {
+	width: 50%;
+}
+
+.payer-issuer {
+	border-top: 2px solid var(--theme-default);
+	border-bottom: 2px solid var(--theme-default);
+	padding: 10px 0px;
+}
+
+.payer-mobile {
+	width: 50%;
+	color: var(--theme-default);
+	float: left;
+}
+
+.payer-mobile-no {
+	width: 50%;
+}
+
+.payeer-cnic {
+	width: 50%;
+	color: var(--theme-default);
+	float: left;
+}
+
+.payeer-cnic-no {
+	width: 50%;
+}
+
+.payee-title {
+	width: 50%;
+	color: var(--theme-default);
+	float: left;
+}
+
+.payee-name {
+	width: 50%;
+}
+
 /*# sourceMappingURL=style.css.map */

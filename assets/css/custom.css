@@ -24,3 +24,11 @@ h1, h2, h3, h4, h5, h6, p, a, span, input, select, textarea, button {
 .page-heading {
     color: var(--theme-default);
 }
+
+@font-face {
+	font-family: 'MICR Encoding';
+	font-style: normal;
+	font-weight: 100;
+	font-display: swap;
+	src: url(../fonts/micrenc.ttf) format('ttf');
+  }
