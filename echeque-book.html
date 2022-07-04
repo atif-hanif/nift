@@ -145,7 +145,7 @@
 						<div class="col-12">
 							<div class="card rounded-0">
 								<div class="card-body">
-									<h3 class="mb-0 title">eCheque Book</h3>
+									<h3 class="mb-0 title">eCheque Book Management</h3>
 									<button class="btn btn-primary float-end custom-btn" data-bs-toggle="modal" data-bs-target="#myModal">
 										<i class="fa-solid fa-square-plus"></i>
 									</button>
@@ -223,26 +223,21 @@
                     <form class="theme-form" action="">
                         <div class="form-floating mb-2">
                             <select class="form-select" id="bank" name="bank">
-                                <option>Select Bank</option>
+                                <option>Select</option>
                                 <option value="hbl">HBL</option>    
                                 <option value="mcb">MCB</option>
                                 <option value="hmb">HMB</option>
                                 <option value="mz">MZ</option>
                             </select>
-                            <label for="bank" class="form-label">Select Bank Name</label>
-                        </div>
-                        <div class="form-floating mb-2">
-                            <input type="text" class="form-control" id="accounteno" name="account" required>
-                            <label for="account">Account No / IBAN No</label>
+                            <label for="bank" class="form-label">Select Own Account</label>
                         </div>
                         <div class="form-floating mb-2">
                             <select class="form-select" id="leaf" name="leaf">
-                                <option>Select Leaf</option>
-                                <option value="25">25</option>    
+                                <option>Select Leaf</option>  
                                 <option value="50">50</option>
                                 <option value="100">100</option>
                             </select>
-                            <label for="leaf" class="form-label">Select Bank Name</label>
+                            <label for="leaf" class="form-label">Select No. of Leaf</label>
                         </div>
                         <div class="form-group mb-0">
                             <button class="btn btn-primary btn-block w-100" type="submit">Next</button>

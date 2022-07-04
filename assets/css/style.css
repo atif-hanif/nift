@@ -41483,12 +41483,20 @@ html[dir="rtl"] body.dark-only .page-wrapper .page-body-wrapper .page-body .card
 	display: block;
 	width: 225px;
 	padding: 10px 0;
-	background-color: #4eae55;
 	box-shadow: 0 5px 10px rgba(0,0,0,.1);
 	color: #fff;
 	text-shadow: 0 1px 1px rgba(0,0,0,.2);
 	text-transform: capitalize;
 	text-align: center;
+	font-size: 14px;
+}
+
+.ribbons-green span {
+	background-color: #4eae55;
+}
+
+.ribbons-red span {
+	background-color: #d7182a;
 }
 
 .ribbons-top-right {
@@ -41780,5 +41788,55 @@ input[type=number] {
 .payee-name {
 	width: 50%;
 }
+
+/* Launch eCheque */
+
+.launch-card-body {
+	background-color: #cccccc !important;
+	border-radius: 5px !important;
+}
+
+.launch-modal-header {
+	color: #fff;
+	background-color: #e64151;
+}
+
+.launch-modal-header h4 {
+	text-transform: uppercase;
+}
+
+.no-button {
+	background-color: #fff !important;
+	color: #000;
+}
+
+.no-button:hover, .no-button:focus {
+	background-color: #dc3545 !important;
+	color: #fff;
+}
+
+.yes-button:hover {
+	background-color: #fff !important;
+	color: #000;
+}
+
+/* View eCheque */
+
+.share {
+	border-radius: 50%;
+	border: 1px solid #dc3545;
+	width: 80px;
+	height: 80px;
+	margin-left: auto;
+}
+
+.download {
+	border-radius: 50%;
+	border: 1px solid #dc3545;
+	width: 80px;
+	height: 80px;
+	margin-right: auto;
+}
+
 
 /*# sourceMappingURL=style.css.map */
