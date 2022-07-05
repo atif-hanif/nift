@@ -32,7 +32,7 @@
 							<form class="theme-form" action="">
 								<h4 class="text-center mb-3">Register</h4>
 								<div class="form-floating mb-2">
-                                    <select class="form-select" id="bank" name="bank">
+                                    <select class="form-select bank-input" id="bank" name="bank">
                                         <option></option>
                                         <option value="hbl">HBL</option>
                                         <option value="mcb">MCB</option>
@@ -42,27 +42,27 @@
                                     <label for="bank" class="form-label">Select Bank Name</label>
                                 </div>
                                 <div class="form-floating mb-2">
-                                    <input type="text" class="form-control" id="accountno" name="accountno" required>
+                                    <input type="text" class="form-control account-input" id="accountno" name="accountno" required>
                                     <label for="accountno">Enter Account No / IBAN</label>
                                 </div>
                                 <div class="form-floating mb-2">
-                                    <input type="text" class="form-control" id="nickname" name="nickname" required>
+                                    <input type="text" class="form-control name-input" id="nickname" name="nickname" required>
                                     <label for="nickname">Enter Nick Name</label>
                                 </div>
                                 <div class="form-floating mb-2">
-                                    <input type="text" data-masked="" data-inputmask="'mask': '99999-9999999-9'" class="form-control" id="cnic" name="cnic" required>
+                                    <input type="text" class="form-control cnic-input" id="cnic" name="cnic" data-masked="" data-inputmask="'mask': '99999-9999999-9'"  required>
                                     <label for="cnic">Enter CNIC</label>
                                 </div>
                                 <div class="form-floating mb-2">
-                                    <input type="text" class="form-control" id="mobileno" value="03" name="mobile" required>
+                                    <input type="text" class="form-control mobile-input" id="mobileno" value="03" name="mobile" required>
                                     <label for="mobile">Enter Mobile No</label>
                                 </div>
                                 <div class="form-floating mb-2">
-                                    <input type="text" class="form-control" id="email" name="email" required>
+                                    <input type="text" class="form-control email-input" id="email" name="email" required>
                                     <label for="email">Email</label>
                                 </div>
                                 <div class="form-floating mb-2">
-                                    <input type="password" class="form-control" id="password" name="password" required>
+                                    <input type="password" class="form-control password-input" id="password" name="password" required>
                                     <label for="password">Password</label>
                                 </div>
 								<div class="form-group mb-0">
@@ -84,7 +84,6 @@
 	<script src="assets/js/script.js"></script>
     <script src="assets/js/font-awsome.js"></script>
     
-
     <script>
         $(document).ready(function(){
             $(":input").inputmask();

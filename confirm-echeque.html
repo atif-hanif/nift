@@ -216,7 +216,7 @@
 									<div class="row pt-2">
 										<div class="bank-detail">
 											<p class="iban-number mb-0">PK33HABB0001234567890123</p>
-											<p class="payee-bank mb-0">hbl</p>
+											<p class="payee-name mb-0">Ali Raza</p>
 											<p class="cheque-number mb-0">c11187568c0540137a0001370032123803c000b</p>
 										</div>
 									</div>
@@ -227,7 +227,18 @@
 						<div class="col-md-6">
                             <div class="card confirm-card">
                                 <div class="card-body confirm-card-body">
-                                    <div class="row">
+									<div class="row">
+										<div class="transaction-div">
+											<p class="d-inline-block mb-0 transaction">Transaction ID</p>
+											<p class="d-inline-block mb-0 transaction-number">202207050537000003</p>
+										</div>
+									</div>
+									<div class="row pt-2">
+										<div class="payee-div">
+											<p class="text-center payee-beneficiary mb-0">Payer/Issuers Details</p>
+										</div>
+									</div>
+                                    <div class="row pt-2">
 										<div class="payee-mobile-div">
 											<p class="d-inline-block payee-mobile mb-0">Mobile No</p>
                                     		<p class="d-inline-block payee-mobile-no mb-0">0313-5975414</p>
@@ -241,8 +252,8 @@
 									</div>
 									<div class="row pt-2">
 										<div class="payment-div">
-											<p class="d-inline-block payment-details mb-0">Payment</p>
-                                    		<p class="d-inline-block payment-amount mb-0">Then Thousand</p>
+											<p class="d-inline-block payments mb-0">Payment Details</p>
+                                    		<p class="d-inline-block payment-details mb-0">Payment</p>
 										</div>
 									</div>
 									<div class="row pt-2">
@@ -265,7 +276,7 @@
 									<div class="row pt-2">
 										<div class="payee-title-div">
 											<p class="d-inline-block payee-title mb-0">Title</p>
-											<p class="d-inline-block payee-name mb-0">HBL</p>
+											<p class="d-inline-block payee-name mb-0">Ali Raza</p>
 										</div>
 									</div>
                                 </div>
@@ -274,7 +285,7 @@
 							<div class="row justify-content-center">
 								<div class="col-12 text-center">
 									<a class="btn btn-primary w-25" href="prepare-echeque.html">Edit</a>
-									<a class="btn btn-primary w-25 ms-3" href="launch-echeque.html">Next</a>
+									<a class="btn btn-primary w-25 ms-3" data-bs-toggle="modal" data-bs-target="#authorize">Next</a>
 								</div>
 							</div>
 							
@@ -295,6 +306,23 @@
 				</div>
 			</footer>
 			<!-- End Footer -->
+		</div>
+	</div>
+
+	<div class="modal" id="authorize">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header authorize-modal-header">
+					<h4 class="modal-title text-center w-100">Authorize eCheque</h4>
+				</div>
+				<div class="modal-body text-center">
+					Are you sure, you want to Authorize eCheque?
+					<div class="row justify-content-center mt-3">
+						<a class="btn btn-danger w-25 no-button" data-bs-dismiss="modal">No</a>
+						<a href="launch-echeque.html" class="btn btn-danger w-25 ms-5 yes-button">Yes</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 

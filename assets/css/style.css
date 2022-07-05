@@ -1302,6 +1302,7 @@
 .btn-primary {
 	background-color: var(--theme-default) !important;
 	border-color: var(--theme-default) !important;
+	text-transform: uppercase;
 }
 
 .btn-secondary {
@@ -41386,6 +41387,77 @@ html[dir="rtl"] body.dark-only .page-wrapper .page-body-wrapper .page-body .card
 	color: var(--theme-default);
 }
 
+.form-floating>label {
+	padding: 1rem 3rem;
+}
+
+.mobile-input {
+	background: url(../images/icons/mobile.svg);
+    padding-left: 45px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.password-input {
+	background: url(../images/icons/padlock.svg);
+    padding-left: 45px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bank-input {
+	background: url(../images/icons/bank.svg);
+    padding-left: 45px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.account-input {
+	background: url(../images/icons/numbers.svg);
+    padding-left: 45px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.name-input {
+	background: url(../images/icons/text.svg);
+    padding-left: 45px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cnic-input {
+	background: url(../images/icons/cnic.svg);
+    padding-left: 45px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.email-input {
+	background: url(../images/icons/envelope.svg);
+    padding-left: 45px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.date-input {
+	background: url(../images/icons/calendar.svg);
+    padding-left: 45px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.leaf-input {
+	background: url(../images/icons/cheque.svg);
+    padding-left: 45px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+hr {
+	color: var(--theme-default);
+}
+
 /* Beneificary Management */
 
 .search{
@@ -41608,7 +41680,7 @@ html[dir="rtl"] body.dark-only .page-wrapper .page-body-wrapper .page-body .card
 	color: #000;
 }
 
-/* E-Cheque */
+/* E-Cheque Management */
 
 .cheque-card-body {
 	background-color: #cccccc !important;
@@ -41642,6 +41714,16 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.prepare-cheque{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 /* Confirm Cheque */
@@ -41714,13 +41796,27 @@ input[type=number] {
     padding: 5px 10px;
 }
 
-.payee-bank {
-	color: var(--theme-default);
+.payee-name {
 	text-transform: uppercase;
 }
 
 .cheque-number {
 	font-family: MICR Encoding;
+}
+
+.transaction {
+	width: 50%;
+	float: left;
+}
+
+.transaction-number {
+	width: 50%;
+}
+
+.payee-beneficiary {
+	border-top: 2px solid var(--theme-default);
+	border-bottom: 2px solid var(--theme-default);
+	padding: 10px 0px;
 }
 
 .payee-mobile {
@@ -41743,13 +41839,13 @@ input[type=number] {
 	width: 50%;
 }
 
-.payment-details {
+.payments {
 	width: 50%;
 	color: var(--theme-default);
 	float: left;
 }
 
-.payment-amount {
+.payment-details {
 	width: 50%;
 }
 
@@ -41789,7 +41885,16 @@ input[type=number] {
 	width: 50%;
 }
 
+.authorize-modal-header {
+    color: #fff;
+    background-color: #e64151;
+}
+
 /* Launch eCheque */
+
+.ribbons-dark-green span {
+	background-color: #006600;
+}
 
 .launch-card-body {
 	background-color: #cccccc !important;
@@ -41799,10 +41904,6 @@ input[type=number] {
 .launch-modal-header {
 	color: #fff;
 	background-color: #e64151;
-}
-
-.launch-modal-header h4 {
-	text-transform: uppercase;
 }
 
 .no-button {
@@ -41818,6 +41919,10 @@ input[type=number] {
 .yes-button:hover {
 	background-color: #fff !important;
 	color: #000;
+}
+
+.launch-card:hover .overlay {
+    opacity: 0.8;
 }
 
 /* View eCheque */
@@ -41838,5 +41943,75 @@ input[type=number] {
 	margin-right: auto;
 }
 
+/* Authorize eCheque */
+
+.authorize-card-body {
+    background-color: #cccccc !important;
+    border-radius: 5px !important;
+}
+
+.auth-cheque {
+	float: left;
+	width: 50%;
+	color: var(--theme-default);
+}
+
+.auth-cheque-number {
+	width: 50%;
+}
+
+.auth-trans {
+	float: left;
+	width: 50%;
+	color: var(--theme-default);
+}
+
+.auth-trans-number {
+	width: 50%;
+}
+
+.auth-bank-name {
+	color: var(--theme-default);
+}
+
+.auth-payee {
+	float: left;
+	width: 50%;
+	color: var(--theme-default);
+}
+
+.auth-payee-name {
+	width: 50%;
+}
+
+.auth-mobile {
+	float: left;
+	width: 50%;
+	color: var(--theme-default);
+}
+
+.auth-mobile-no {
+	width: 50%;
+}
+
+.auth-date {
+	float: left;
+	width: 50%;
+	color: var(--theme-default);
+}
+
+.auth-dates {
+	width: 50%;
+}
+
+.auth-amount {
+	float: left;
+	width: 50%;
+	color: var(--theme-default);
+}
+
+.auth-amount-no {
+	width: 50%;
+}
 
 /*# sourceMappingURL=style.css.map */
