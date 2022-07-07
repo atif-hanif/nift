@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
-	<title>NIFT - Authorize eCheque</title>
+	<title>NIFT - Deposit eCheque</title>
 	<link rel="stylesheet" href="assets/css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendors/scrollbar/scrollbar.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
@@ -161,7 +161,7 @@
 						<div class="col-12">
 							<div class="card rounded-0">
 								<div class="card-body">
-									<h3 class="mb-0 title">Authorize eCheque</h3>
+									<h3 class="mb-0 title">Deposit eCheque</h3>
 								</div>
 							</div>
 						</div>
@@ -177,12 +177,14 @@
                         </div>
                     </div>
 				
-                    <div class="row mt-4">
+					<button type="button" class="btn btn-primary show-btn d-block ms-auto mt-2 d-none shw-btn">View All</button>
+
+                    <div class="row mt-4" id="cmt-grid">
 						<div class="col-md-6">
-                            <div class="card authorize-card">
-                                <div class="card-body authorize-card-body">
-                                    <div class="ribbons ribbons-red ribbons-top-right">
-                                        <span>Un-Authorized</span>
+                            <div class="card deposit-card">
+                                <div class="card-body deposit-card-body">
+                                    <div class="ribbons ribbons-light-green ribbons-top-right">
+                                        <span>Accepted</span>
                                     </div>
                                     <div class="row">
                                         <p class="mb-0">Ali Raza</p>
@@ -231,14 +233,141 @@
 									</div>
                                 </div>
 								<div class="overlay">
-									<a href="confirm-echeque.html" class="btnEdit">
+									<a href="#" class="btnEdit">
 										<div class="prepare-cheque">
 											<img src="assets/images/icons/prepare.svg" class="icons">
-											<p class="text">Authorize</p>
+											<p class="text">Deposit</p>
 										</div>
 									</a>
 								</div>
                             </div>
+						</div>
+					</div>
+
+					<div class="d-none myDIV mt-3">
+						<div class="row mt-4">
+							<div class="col-md-6">
+								<div class="card deposit-card">
+									<div class="card-body deposit-card-body">
+										<div class="row">
+											<div class="cheque-div">
+												<p class="d-inline-block mb-0">Cheque No.</p>
+												<p class="d-inline-block cheque-no mb-0">7000003</p>
+											</div>
+										</div>
+										<div class="row pt-2">
+											<div class="bank-logo">
+												<img src="assets/images/logo/hbl-logo.png" class="bank-logo-img">
+											</div>
+										</div>
+										<div class="row pt-2">
+											<div class="bank-address">
+												<p class="bank-details mb-0">Awt Plaza Branch, Karachi</p>
+											</div>
+										</div>
+										<div class="row pt-2">
+											<div class="date-div">
+												<p class="d-inline-block mb-0">Date.</p>
+												<p class="d-inline-block cheque-date mb-0">30/05/2022</p>
+											</div>
+										</div>
+										<div class="row pt-2">
+											<div class="payee-div">
+												<p class="d-inline-block payee mb-0">Pay</p>
+												<div class="d-inline-block payee-details">
+													<p class="payee-name mb-0">Ali</p>
+													<p class="payee-cnic mb-0">11111-1111111-1</p>
+												</div>
+											</div>
+										</div>
+										<div class="row pt-2">
+											<div class="amount-div">
+												<p class="d-inline-block payee-currency mb-0">Rupees</p>
+												<p class="d-inline-block payee-amount mb-0">Ten Thousand Only</p>
+											</div>
+										</div>
+										<div class="row pt-2">
+											<div class="digit-div">
+												<p class="d-inline-block digit mb-0">PKR: 10000.00</p>
+											</div>
+										</div>
+										<div class="row pt-2">
+											<div class="bank-detail">
+												<p class="iban-number mb-0">PK33HABB0001234567890123</p>
+												<p class="payee-name mb-0">Ali Raza</p>
+												<p class="cheque-number mb-0">c11187568c0540137a0001370032123803c000b</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+	
+							<div class="col-md-6">
+								<div class="card confirm-card">
+									<div class="card-body confirm-card-body">
+										<div class="row">
+											<div class="transaction-div">
+												<p class="d-inline-block mb-0 transaction">Transaction ID</p>
+												<p class="d-inline-block mb-0 transaction-number">202207050537000003</p>
+											</div>
+										</div>
+										<div class="row pt-2">
+											<div class="payee-div">
+												<p class="text-center payee-beneficiary mb-0">Payer/Issuers Details</p>
+											</div>
+										</div>
+										<div class="row pt-2">
+											<div class="payee-mobile-div">
+												<p class="d-inline-block payee-mobile mb-0">Mobile No</p>
+												<p class="d-inline-block payee-mobile-no mb-0">0313-5975414</p>
+											</div>
+										</div>
+										<div class="row pt-2">
+											<div class="purpose-div">
+												<p class="d-inline-block purpose mb-0">Purpose</p>
+												<p class="d-inline-block purpose-for mb-0">Wallet</p>
+											</div>
+										</div>
+										<div class="row pt-2">
+											<div class="payment-div">
+												<p class="d-inline-block payments mb-0">Payment Details</p>
+												<p class="d-inline-block payment-details mb-0">Payment</p>
+											</div>
+										</div>
+										<div class="row pt-2">
+											<div class="payer-issuer-div">
+												<p class="text-center payer-issuer mb-0">Payer/Issuers Details</p>
+											</div>
+										</div>
+										<div class="row pt-2">
+											<div class="payer-mobile-div">
+												<p class="d-inline-block payer-mobile mb-0">Mobile No</p>
+												<p class="d-inline-block payer-mobile-no mb-0">0313-5975414</p>
+											</div>
+										</div>
+										<div class="row pt-2">
+											<div class="payeer-cnic-div">
+												<p class="d-inline-block payeer-cnic mb-0">CNIC No</p>
+												<p class="d-inline-block payeer-cnic-no mb-0">11111-1111111-1</p>
+											</div>
+										</div>
+										<div class="row pt-2">
+											<div class="payee-title-div">
+												<p class="d-inline-block payee-title mb-0">Title</p>
+												<p class="d-inline-block payee-name mb-0">Ali Raza</p>
+											</div>
+										</div>
+									</div>
+								</div>
+	
+								<div class="row justify-content-center">
+									<div class="col-12 text-center">
+										<button class="btn btn-primary back-btn" data-bs-toggle="modal" data-bs-target="#reject">Reject</button>
+										<button class="btn btn-primary next-btn" data-bs-toggle="modal" data-bs-target="#accept">Accept</a>
+									</div>
+								</div>
+								
+							</div>
 						</div>
 					</div>
 				</div>
@@ -259,6 +388,48 @@
 		</div>
 	</div>
 
+    <div class="modal" id="reject">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header revoke-modal-header">
+					<h4 class="modal-title text-center w-100">Revoke Request</h4>
+				</div>
+				<div class="modal-body text-center">
+					<div class="mb-2">
+                        <select class="form-select" id="reason" name="reason">
+                            <option>Select</option>
+                            <option value="reason1">Reason 1</option>    
+                            <option value="reason2">Reason 2</option>
+                            <option value="reason3">Reason 3</option>
+                            <option value="reason4">Reason 4</option>
+                        </select>
+                    </div>
+					<div class="row justify-content-center mt-3">
+						<button class="btn btn-danger w-25 no-button" data-bs-dismiss="modal">No</button>
+						<button class="btn btn-danger w-25 ms-5 yes-button">Yes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="accept">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header launch-modal-header">
+					<h4 class="modal-title text-center w-100">Accept eCheque</h4>
+				</div>
+				<div class="modal-body text-center">
+					Are you sure, you want to Accept eCheque?
+					<div class="row justify-content-center mt-3">
+						<a class="btn btn-danger w-25 no-button" data-bs-dismiss="modal">No</a>
+						<a href="launch-echeque.html" class="btn btn-danger w-25 ms-5 yes-button">Yes</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- JS -->
 	<script src="assets/vendors/jquery/jquery-3.5.1.min.js"></script>
 	<script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -270,6 +441,38 @@
 	<script src="assets/js/sidebar-menu.js"></script>
 	<script src="assets/js/script.js"></script>
     <script src="assets/js/font-awsome.js"></script>
+
+	<script>
+		$(document).ready(function () {
+
+			$(document).on('click', '.btnEdit', function (e) {
+
+				if ($('.myDIV').hasClass('d-none')) {
+					$('.myDIV').removeClass("d-none");
+					$('#cmt-grid').addClass("d-none");
+					$('.shw-btn').removeClass("d-none");
+				}
+				else {
+					$('#cmt-grid').removeClass("d-none");
+					$('.shw-btn').removeClass("d-none");
+					$('.myDIV').addClass("d-none");
+				}
+			});
+
+			$(document).on('click', '.shw-btn', function (e) {
+
+				if ($('#cmt-grid').hasClass('d-none')) {
+					$('#cmt-grid').removeClass("d-none");
+					$('.shw-btn').addClass('d-none');
+					$('.myDIV').addClass("d-none");
+				}
+				else {
+					$('#cmt-grid').addClass("d-none");
+				}
+			});
+
+		});
+	</script>
 
 </body>
 

@@ -41458,6 +41458,15 @@ hr {
 	color: var(--theme-default);
 }
 
+.back-btn {
+	width: 48%;
+	margin-right: 2%;
+}
+
+.next-btn {
+	width: 48%;
+}
+
 /* Beneificary Management */
 
 .search{
@@ -41896,6 +41905,10 @@ input[type=number] {
 	background-color: #006600;
 }
 
+.ribbons-blue span {
+	background-color: #0066ff;
+}
+
 .launch-card-body {
 	background-color: #cccccc !important;
 	border-radius: 5px !important;
@@ -41948,6 +41961,10 @@ input[type=number] {
 .authorize-card-body {
     background-color: #cccccc !important;
     border-radius: 5px !important;
+}
+
+.authorize-card:hover .overlay {
+    opacity: 0.8;
 }
 
 .auth-cheque {
@@ -42012,6 +42029,59 @@ input[type=number] {
 
 .auth-amount-no {
 	width: 50%;
+}
+
+/* Revoke eCheque */
+
+.ribbons-light-green span {
+	background-color: #00cc00;
+}
+
+.revoke-card-body {
+	background-color: #cccccc !important;
+	border-radius: 5px !important;
+}
+
+.revoke-modal-header {
+	color: #fff;
+	background-color: #e64151;
+}
+
+/* Issue History */
+
+.issue-card-body {
+	background-color: #cccccc !important;
+	border-radius: 5px !important;
+}
+
+.ribbons-orange span {
+	background-color: #ff9900;
+}
+
+.issue-card:hover .overlay {
+    opacity: 0.8;
+}
+
+/* Accept eCheque */
+
+.accept-card-body {
+	background-color: #cccccc !important;
+	border-radius: 5px !important;
+}
+
+.accept-card:hover .overlay {
+    opacity: 0.8;
+}
+
+/* Deposit eCheque */
+
+.accept-card-body {
+	background-color: #cccccc !important;
+	border-radius: 5px !important;
+}
+
+.accept-card:hover .overlay {
+    opacity: 0.8;
 }
 
 /*# sourceMappingURL=style.css.map */

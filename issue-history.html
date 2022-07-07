@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
-	<title>NIFT - Confirm eCheque</title>
+	<title>NIFT - Issue History</title>
 	<link rel="stylesheet" href="assets/css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendors/scrollbar/scrollbar.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
@@ -161,136 +161,226 @@
 						<div class="col-12">
 							<div class="card rounded-0">
 								<div class="card-body">
-									<h3 class="mb-0 title">Confirm eCheque</h3>
+									<h3 class="mb-0 title">Issuer History</h3>
 								</div>
 							</div>
 						</div>
 					</div>
-				
-                    <div class="row">
-						<div class="col-md-6">
-                            <div class="card confirm-card">
-                                <div class="card-body confirm-card-body">
-                                    <div class="row">
-										<div class="cheque-div">
-											<p class="d-inline-block mb-0">Cheque No.</p>
-                                    		<p class="d-inline-block cheque-no mb-0">7000003</p>
-										</div>
-                                    </div>
-									<div class="row pt-2">
-										<div class="bank-logo">
-											<img src="assets/images/logo/hbl-logo.png" class="bank-logo-img">
-										</div>
-									</div>
-									<div class="row pt-2">
-										<div class="bank-address">
-											<p class="bank-details mb-0">Awt Plaza Branch, Karachi</p>
-										</div>
-									</div>
-									<div class="row pt-2">
-										<div class="date-div">
-											<p class="d-inline-block mb-0">Date.</p>
-											<p class="d-inline-block cheque-date mb-0">30/05/2022</p>
-										</div>
-									</div>
-									<div class="row pt-2">
-										<div class="payee-div">
-											<p class="d-inline-block payee mb-0">Pay</p>
-											<div class="d-inline-block payee-details">
-												<p class="payee-name mb-0">Ali</p>
-												<p class="payee-cnic mb-0">11111-1111111-1</p>
-											</div>
-										</div>
-									</div>
-									<div class="row pt-2">
-										<div class="amount-div">
-											<p class="d-inline-block payee-currency mb-0">Rupees</p>
-											<p class="d-inline-block payee-amount mb-0">Ten Thousand Only</p>
-										</div>
-									</div>
-									<div class="row pt-2">
-										<div class="digit-div">
-											<p class="d-inline-block digit mb-0">PKR: 10000.00</p>
-										</div>
-									</div>
-									<div class="row pt-2">
-										<div class="bank-detail">
-											<p class="iban-number mb-0">PK33HABB0001234567890123</p>
-											<p class="payee-name mb-0">Ali Raza</p>
-											<p class="cheque-number mb-0">c11187568c0540137a0001370032123803c000b</p>
-										</div>
-									</div>
-                                </div>
-                            </div>
-						</div>
 
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="search">
+                                <i class="fa fa-search"></i>
+                                <input type="text" class="form-control search-input" placeholder="Search">
+                                <button class="btn btn-primary search-btn">Search</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <select class="form-select" id="filter" name="filter">
+                                <option>Select</option>
+                                <option value="all">All</option>    
+                                <option value="notclear">Not Clear</option>
+                                <option value="cleared">Cleared</option>
+                                <option value="deleted">Deleted</option>
+                            </select>
+                        </div>
+                    </div>
+				
+                    <div class="row mt-4">
 						<div class="col-md-6">
-                            <div class="card confirm-card">
-                                <div class="card-body confirm-card-body">
-									<div class="row">
-										<div class="transaction-div">
-											<p class="d-inline-block mb-0 transaction">Transaction ID</p>
-											<p class="d-inline-block mb-0 transaction-number">202207050537000003</p>
-										</div>
-									</div>
-									<div class="row pt-2">
-										<div class="payee-div">
-											<p class="text-center payee-beneficiary mb-0">Payer/Issuers Details</p>
+                            <div class="card issue-card">
+                                <div class="card-body issue-card-body">
+                                    <div class="ribbons ribbons-blue ribbons-top-right">
+                                        <span>Exceuted</span>
+                                    </div>
+                                    <div class="row">
+                                        <p class="mb-0">Ali Raza</p>
+                                    </div>
+                                    <div class="row pt-2">
+										<div class="auth-cheque-div">
+											<p class="d-inline-block mb-0 auth-cheque">Cheque No</p>
+											<p class="d-inline-block mb-0 auth-cheque-number">7000003</p>
 										</div>
 									</div>
                                     <div class="row pt-2">
-										<div class="payee-mobile-div">
-											<p class="d-inline-block payee-mobile mb-0">Mobile No</p>
-                                    		<p class="d-inline-block payee-mobile-no mb-0">0313-5975414</p>
-										</div>
-                                    </div>
-									<div class="row pt-2">
-										<div class="purpose-div">
-											<p class="d-inline-block purpose mb-0">Purpose</p>
-                                    		<p class="d-inline-block purpose-for mb-0">Wallet</p>
+										<div class="auth-trans-div">
+											<p class="d-inline-block mb-0 auth-trans">Cheque No</p>
+											<p class="d-inline-block mb-0 auth-trans-number">202207050537000003</p>
 										</div>
 									</div>
 									<div class="row pt-2">
-										<div class="payment-div">
-											<p class="d-inline-block payments mb-0">Payment Details</p>
-                                    		<p class="d-inline-block payment-details mb-0">Payment</p>
+										<p class="auth-bank-name mb-0">Habib Bank Ltd</p>
+                                        <p class="auth-bank-iban mb-0">PK33HABB0001234567890123</p>
+									</div>
+                                    <hr>
+									<div class="row">
+										<div class="auth-payee-div">
+											<p class="d-inline-block auth-payee mb-0">Payee Acc Title</p>
+											<p class="d-inline-block auth-payee-name mb-0">Ali</p>
 										</div>
 									</div>
 									<div class="row pt-2">
-										<div class="payer-issuer-div">
-											<p class="text-center payer-issuer mb-0">Payer/Issuers Details</p>
+										<div class="auth-mobile-div">
+											<p class="d-inline-block auth-mobile mb-0">Payee Mobile No</p>
+											<p class="d-inline-block auth-mobile-no mb-0">0311-1111111</p>
+										</div>
+									</div>
+                                    <hr>
+									<div class="row">
+										<div class="auth-date-div">
+											<p class="d-inline-block auth-date mb-0">Date</p>
+											<p class="d-inline-block auth-dates mb-0">30/05/2022</p>
 										</div>
 									</div>
 									<div class="row pt-2">
-										<div class="payer-mobile-div">
-											<p class="d-inline-block payer-mobile mb-0">Mobile No</p>
-                                    		<p class="d-inline-block payer-mobile-no mb-0">0313-5975414</p>
-										</div>
-									</div>
-									<div class="row pt-2">
-										<div class="payeer-cnic-div">
-											<p class="d-inline-block payeer-cnic mb-0">CNIC No</p>
-											<p class="d-inline-block payeer-cnic-no mb-0">11111-1111111-1</p>
-										</div>
-									</div>
-									<div class="row pt-2">
-										<div class="payee-title-div">
-											<p class="d-inline-block payee-title mb-0">Title</p>
-											<p class="d-inline-block payee-name mb-0">Ali Raza</p>
+										<div class="auth-amount-div">
+											<p class="d-inline-block auth-amount mb-0">Amount</p>
+											<p class="d-inline-block auth-amount-no mb-0">500.00</p>
 										</div>
 									</div>
                                 </div>
-                            </div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 text-center">
-									<a class="btn btn-primary w-25" href="prepare-echeque.html">Edit</a>
-									<a class="btn btn-primary w-25 ms-3" data-bs-toggle="modal" data-bs-target="#authorize">Next</a>
+                                <div class="overlay">
+									<a href="view-echeque.html">
+										<div class="prepare-cheque">
+											<img src="assets/images/icons/view.svg" class="icons">
+											<p class="text">View</p>
+										</div>
+									</a>
 								</div>
-							</div>
-							
+                            </div>
+						</div>
+
+                        <div class="col-md-6">
+                            <div class="card issue-card">
+                                <div class="card-body issue-card-body">
+                                    <div class="ribbons ribbons-light-green ribbons-top-right">
+                                        <span>Launched</span>
+                                    </div>
+                                    <div class="row">
+                                        <p class="mb-0">Ali Raza</p>
+                                    </div>
+                                    <div class="row pt-2">
+										<div class="auth-cheque-div">
+											<p class="d-inline-block mb-0 auth-cheque">Cheque No</p>
+											<p class="d-inline-block mb-0 auth-cheque-number">7000003</p>
+										</div>
+									</div>
+                                    <div class="row pt-2">
+										<div class="auth-trans-div">
+											<p class="d-inline-block mb-0 auth-trans">Cheque No</p>
+											<p class="d-inline-block mb-0 auth-trans-number">202207050537000003</p>
+										</div>
+									</div>
+									<div class="row pt-2">
+										<p class="auth-bank-name mb-0">Habib Bank Ltd</p>
+                                        <p class="auth-bank-iban mb-0">PK33HABB0001234567890123</p>
+									</div>
+                                    <hr>
+									<div class="row">
+										<div class="auth-payee-div">
+											<p class="d-inline-block auth-payee mb-0">Payee Acc Title</p>
+											<p class="d-inline-block auth-payee-name mb-0">Ali</p>
+										</div>
+									</div>
+									<div class="row pt-2">
+										<div class="auth-mobile-div">
+											<p class="d-inline-block auth-mobile mb-0">Payee Mobile No</p>
+											<p class="d-inline-block auth-mobile-no mb-0">0311-1111111</p>
+										</div>
+									</div>
+                                    <hr>
+									<div class="row">
+										<div class="auth-date-div">
+											<p class="d-inline-block auth-date mb-0">Date</p>
+											<p class="d-inline-block auth-dates mb-0">30/05/2022</p>
+										</div>
+									</div>
+									<div class="row pt-2">
+										<div class="auth-amount-div">
+											<p class="d-inline-block auth-amount mb-0">Amount</p>
+											<p class="d-inline-block auth-amount-no mb-0">500.00</p>
+										</div>
+									</div>
+                                </div>
+                                <div class="overlay">
+									<a href="view-echeque.html">
+										<div class="prepare-cheque">
+											<img src="assets/images/icons/view.svg" class="icons">
+											<p class="text">View</p>
+										</div>
+									</a>
+								</div>
+                            </div>
 						</div>
 					</div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card issue-card">
+                                <div class="card-body issue-card-body">
+                                    <div class="ribbons ribbons-orange ribbons-top-right">
+                                        <span>Revoke Request</span>
+                                    </div>
+                                    <div class="row">
+                                        <p class="mb-0">Ali Raza</p>
+                                    </div>
+                                    <div class="row pt-2">
+										<div class="auth-cheque-div">
+											<p class="d-inline-block mb-0 auth-cheque">Cheque No</p>
+											<p class="d-inline-block mb-0 auth-cheque-number">7000003</p>
+										</div>
+									</div>
+                                    <div class="row pt-2">
+										<div class="auth-trans-div">
+											<p class="d-inline-block mb-0 auth-trans">Cheque No</p>
+											<p class="d-inline-block mb-0 auth-trans-number">202207050537000003</p>
+										</div>
+									</div>
+									<div class="row pt-2">
+										<p class="auth-bank-name mb-0">Habib Bank Ltd</p>
+                                        <p class="auth-bank-iban mb-0">PK33HABB0001234567890123</p>
+									</div>
+                                    <hr>
+									<div class="row">
+										<div class="auth-payee-div">
+											<p class="d-inline-block auth-payee mb-0">Payee Acc Title</p>
+											<p class="d-inline-block auth-payee-name mb-0">Ali</p>
+										</div>
+									</div>
+									<div class="row pt-2">
+										<div class="auth-mobile-div">
+											<p class="d-inline-block auth-mobile mb-0">Payee Mobile No</p>
+											<p class="d-inline-block auth-mobile-no mb-0">0311-1111111</p>
+										</div>
+									</div>
+                                    <hr>
+									<div class="row">
+										<div class="auth-date-div">
+											<p class="d-inline-block auth-date mb-0">Date</p>
+											<p class="d-inline-block auth-dates mb-0">30/05/2022</p>
+										</div>
+									</div>
+									<div class="row pt-2">
+										<div class="auth-amount-div">
+											<p class="d-inline-block auth-amount mb-0">Amount</p>
+											<p class="d-inline-block auth-amount-no mb-0">500.00</p>
+										</div>
+									</div>
+                                </div>
+								<div class="overlay">
+									<a href="view-echeque.html">
+										<div class="prepare-cheque">
+											<img src="assets/images/icons/view.svg" class="icons">
+											<p class="text">View</p>
+										</div>
+									</a>
+								</div>
+                            </div>
+						</div>
+                    </div>
 				</div>
 			</div>
 			<!-- End Content-->
@@ -309,16 +399,14 @@
 		</div>
 	</div>
 
-	<div class="modal" id="authorize">
+	<div class="modal" id="launch">
 		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
-				<div class="modal-header authorize-modal-header">
-					<h4 class="modal-title text-center w-100">Authorize eCheque</h4>
+				<div class="modal-header launch-modal-header">
+					<h4 class="modal-title text-center w-100">Launch eCheque</h4>
 				</div>
 				<div class="modal-body text-center">
-					Transaction:
-					ID202207050537000003<br>
-					Are you sure, you want to Authorize eCheque?
+					Are you sure, you want to Launch eCheque?
 					<div class="row justify-content-center mt-3">
 						<a class="btn btn-danger w-25 no-button" data-bs-dismiss="modal">No</a>
 						<a href="launch-echeque.html" class="btn btn-danger w-25 ms-5 yes-button">Yes</a>
@@ -339,6 +427,7 @@
 	<script src="assets/js/sidebar-menu.js"></script>
 	<script src="assets/js/script.js"></script>
     <script src="assets/js/font-awsome.js"></script>
+
 
 </body>
 
