@@ -42075,13 +42075,18 @@ input[type=number] {
 
 /* Deposit eCheque */
 
-.accept-card-body {
+.deposit-card-body {
 	background-color: #cccccc !important;
 	border-radius: 5px !important;
 }
 
-.accept-card:hover .overlay {
+.deposit-card:hover .overlay {
     opacity: 0.8;
+}
+
+.deposit-modal-header {
+	color: #fff;
+	background-color: #e64151;
 }
 
 /*# sourceMappingURL=style.css.map */

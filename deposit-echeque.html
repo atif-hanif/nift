@@ -303,8 +303,8 @@
 							</div>
 	
 							<div class="col-md-6">
-								<div class="card confirm-card">
-									<div class="card-body confirm-card-body">
+								<div class="card deposit-card">
+									<div class="card-body deposit-card-body">
 										<div class="row">
 											<div class="transaction-div">
 												<p class="d-inline-block mb-0 transaction">Transaction ID</p>
@@ -359,16 +359,66 @@
 										</div>
 									</div>
 								</div>
-	
-								<div class="row justify-content-center">
-									<div class="col-12 text-center">
-										<button class="btn btn-primary back-btn" data-bs-toggle="modal" data-bs-target="#reject">Reject</button>
-										<button class="btn btn-primary next-btn" data-bs-toggle="modal" data-bs-target="#accept">Accept</a>
-									</div>
-								</div>
 								
 							</div>
 						</div>
+
+						<form class="theme-form" action="">
+							<div class="row">
+								<div class="col-12 col-sm-12 col-md-4">
+									<div class="form-floating mb-2">
+										<select class="form-select bank-input" id="bank" name="bank">
+											<option>Select</option>
+											<option value="hbl">HBL</option>    
+											<option value="mcb">MCB</option>
+											<option value="hmb">HMB</option>
+											<option value="mz">MZ</option>
+										</select>
+										<label for="bank" class="form-label">Select Own Account</label>
+									</div>
+								</div>
+								
+								<div class="col-12 col-sm-12 col-md-4">
+									<div class="form-floating">
+										<input type="text" class="form-control name-input" id="accounttitle" name="accounttitle" required>
+										<label for="accounttitle">Account Title</label>
+									</div>
+								</div>
+
+								<div class="col-12 col-sm-12 col-md-4">
+									<div class="form-floating">
+										<input type="text" class="form-control name-input" id="bank" name="bank" required>
+										<label for="bank">Bank</label>
+									</div>
+								</div>
+
+								<div class="col-12 col-sm-12 col-md-4">
+									<div class="form-floating">
+										<input type="text" class="form-control name-input" id="accountno" name="accountno" required>
+										<label for="accountno">Acc No/IBAN</label>
+									</div>
+								</div>
+
+								<div class="col-12 col-sm-12 col-md-4">
+									<div class="form-floating">
+										<input type="text" class="form-control mobile-input " id="mobileno" name="mobileno" required>
+										<label for="mobileno">Mobile No</label>
+									</div>
+								</div>
+
+								<div class="col-12 col-sm-12 col-md-4">
+									<div class="form-floating">
+										<input type="text" class="form-control name-input" id="currency" name="currency" required>
+										<label for="currency">Currency</label>
+									</div>
+								</div>
+
+								<div class="col-12 text-center my-3">
+									<button class="btn btn-primary back-btn" data-bs-toggle="modal" data-bs-dismiss="modal">Back</button>
+									<button class="btn btn-primary next-btn" data-bs-toggle="modal" data-bs-target="#deposit">Deposit</a>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -388,39 +438,14 @@
 		</div>
 	</div>
 
-    <div class="modal" id="reject">
+	<div class="modal" id="deposit">
 		<div class="modal-dialog modal-sm">
 			<div class="modal-content">
-				<div class="modal-header revoke-modal-header">
-					<h4 class="modal-title text-center w-100">Revoke Request</h4>
+				<div class="modal-header deposit-modal-header">
+					<h4 class="modal-title text-center w-100">Deposit eCheque</h4>
 				</div>
 				<div class="modal-body text-center">
-					<div class="mb-2">
-                        <select class="form-select" id="reason" name="reason">
-                            <option>Select</option>
-                            <option value="reason1">Reason 1</option>    
-                            <option value="reason2">Reason 2</option>
-                            <option value="reason3">Reason 3</option>
-                            <option value="reason4">Reason 4</option>
-                        </select>
-                    </div>
-					<div class="row justify-content-center mt-3">
-						<button class="btn btn-danger w-25 no-button" data-bs-dismiss="modal">No</button>
-						<button class="btn btn-danger w-25 ms-5 yes-button">Yes</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal" id="accept">
-		<div class="modal-dialog modal-sm">
-			<div class="modal-content">
-				<div class="modal-header launch-modal-header">
-					<h4 class="modal-title text-center w-100">Accept eCheque</h4>
-				</div>
-				<div class="modal-body text-center">
-					Are you sure, you want to Accept eCheque?
+					Are you sure, you want to Deposit eCheque?
 					<div class="row justify-content-center mt-3">
 						<a class="btn btn-danger w-25 no-button" data-bs-dismiss="modal">No</a>
 						<a href="launch-echeque.html" class="btn btn-danger w-25 ms-5 yes-button">Yes</a>
